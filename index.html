@@ -79,6 +79,20 @@
 //-->
 </style>
     <script language="JavaScript">
+        function controlExpand() {
+            var sup = event.srcElement.id;
+            if (sup != '') {
+                var sub = document.all[(sup + "Sub")]
+                if(sub != null) {
+                    if (sub.style.display =='none')
+                        sub.style.display = '';
+                    else
+                        sub.style.display = 'none';
+                }
+            }
+        }
+        
+        
         $(function() {
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 500) {
@@ -143,15 +157,16 @@
         //-->  
         </script>
     <style>
+        #center {width="500"; margin: 0 auto;}
         
         ul{
            list-style:none;
         }
         * {margin: 0; padding: 0;}
-        #skip {background : skyblue; font-size : 16px; color: skyblue}
+        #skip {background : skyblue; height: 150px; font-size : 20px; color: skyblue; text-align: center; color: white}
         #wrap {text-align: center; font-size: 30px; color: #fff;}
         #header {height: 240px; line-height: 20px; background: skyblue;}
-        #banner {height: 500px; line-height: 50px; background-image: url('back.png');}
+        #banner {height: 500px; line-height: 50px; background-image: url('abstract-1510192_1920.png');}
         #contents {height: 1030px; line-height: 50px; background: #81BEF7;} 
         #footer {height: 220px; line-height: 220px; background: #d6ebfd;}
         .container {width: 1100px; height: inherit; margin: 0 auto; background: rgba(0,0,0,0.1);}
@@ -162,15 +177,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 </head>
 <body link ="white" vlink ="white" alink = "white">
+    
     <!-- 스킵 내비게이션 -->
-    <div id="skip">
+    <!--<div id="skip">
         <p style="text-align:center;">
         <a rel="bookmark" href="#banner" background-color= "#d6ebfd" style="text-decoration:none">배너 영역 바로가기</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a rel="bookmark" href="#contents" style="text-decoration:none">컨텐츠 영역 바로가기</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a rel="bookmark" href="#footer" style="text-decoration:none">하단 영역 바로가기</a></p>
-    </div>
+    </div>-->
     <!-- //스킵 내비게이션 -->
     <div id="wrap">
         <div id="header">
@@ -183,6 +199,37 @@
         </div>
         
         <div class="discord-widget"></div>
+        <div id="skip">
+        <table width="450px" height="145px">
+          <td>
+           <div onClick="controlExpand()" style="cursor:hand">
+            <div id="Free">게시판</div>
+            <div id="FreeSub" style="display:none">
+                <ul>
+                <li><br></li>
+                <li><a href="index2.html" style="text-decoration:none">잡담 게시판</a></li>
+                <li><a href="index2.html" style="text-decoration:none">공지사항</a></li>
+                </ul>
+            </div>
+        </div>
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>
+           <div onClick="controlExpand()" style="cursor:hand">
+            <div id="Book">연재물</div>
+            <div id="BookSub" style="display:none">
+                <ul>
+                <li><br></li>
+                <li><a href="index2.html" style="text-decoration:none">정기 연재 소설</a></li>
+                <li><a href="index2.html" style="text-decoration:none">매스툰</a></li>
+                </ul>
+            </div>
+            </div>
+        </td>
+       </table>
+        
+       
+        
         <div id="banner">
             <div class="container">
                <div class="ban">
@@ -333,7 +380,7 @@
 
 
 
-<!--Start of Tawk.to Script-->
+<!--Start of Tawk.to Script
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -345,12 +392,12 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
+End of Tawk.to Script-->
 
 
 
 
-<div style="position: fixed; bottom: 90px; right: 5px;">
+<div style="position: fixed; bottom: 40px; right: 5px;">
     <a href="#header" style="color:black;">맨 위로</a>
 </body>
 </html>
