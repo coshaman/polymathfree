@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수학연합 홈페이지</title>
+    <link rel="shortcut icon" href="http://img.dongascience.com/polymath/favicon.ico">
+    <script language="JavaScript">
+        $(function(){
+            $("#accordian h3").click(function(){
+                $("#accordian ul ul").slideUp();
+                if(!$(this).next().is(":visible"))
+                {
+                    $(this).next().slideDown();
+                }
+            })
+        })
+        
+        
+        function controlExpand() {
+            var sup = event.srcElement.id;
+            if (sup != '') {
+                var sub = document.all[(sup + "Sub")]
+                if(sub != null) {
+                    if (sub.style.display =='none')
+                        sub.style.display = '';
+                    else
+                        sub.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div onClick="controlExpand()" style="cursor:hand">
+    <div id="Animal">Animal</div>
+    <div id="AnimalSub" style="display:none">cat<br><div id="dog">dog</div>
+    <div id="dogSub" style="display:none">
+        eatable<br>pet<br>
+    </div>
+    </div>
+</div>
+
+
+
+<div id="accordian">
+	<ul>
+		<li>
+			<h3><span class="icon-dashboard"></span>Dashboard</h3>
+			<ul>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Graphs</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+		<li class="active">
+			<h3><span class="icon-tasks"></span>Tasks</h3>
+			<ul>
+				<li><a href="#">Today's tasks</a></li>
+				<li><a href="#">Urgent</a></li>
+				<li><a href="#">Overdues</a></li>
+				<li><a href="#">Recurring</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3><span class="icon-calendar"></span>Calendar</h3>
+			<ul>
+				<li><a href="#">Team Calendar</a></li>
+				<li><a href="#">Private Calendar</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+		<li>
+			<h3><span class="icon-heart"></span>Favourites</h3>
+			<ul>
+				<li><a href="#">Global favs</a></li>
+				<li><a href="#">My favs</a></li>
+				<li><a href="#">Team favs</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+
+<div class="headerInner">
+            <!-- navi -->
+            <div id="navi">
+                <ul>                    <li>
+                        <a href="/aboutMath" class="oneDep">수학동아</a>
+                        <div class="twoDepWrap">
+                            <div class="depInner">
+                                <div class="twoDepArea">
+                                    <div class="twoDepTit"><span>수학동아<p>고품격 비주얼 수학 잡지</p></span></div>
+                                                                        <ul class="twoDep">
+                                                                                    <li><a href="/page/introMath" class="menu">수동 안내</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/page/introMath">수학동아 소개</a></li>
+                                                                                                            <li><a href="/page/introTeam">편집팀 소개</a></li>
+                                                                                                            <li><a href="/contents/list/010103">수상한 편집실</a></li>
+                                                                                                            <li><a href="/contents/list/010104">공지사항</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/vote" class="menu">열혈 수동</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/vote">톡톡 수동 평론단</a></li>
+                                                                                                            <li><a href="/goMath">수학동아가 간다</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/magazine" class="menu">수동 미리보기</a>
+                                                                                            </li>
+                                                                                        <li><a href="/mathtv" class="menu">수동 TV</a>
+                                                                                            </li>
+                                                                                                                        </ul>
+                                </div>
+                            </div>
+                            <div class="backBg"></div>
+                        </div>
+                    </li>
+                                        <li>
+                        <a href="/polymath" class="oneDep">폴리매스</a>
+                        <div class="twoDepWrap">
+                            <div class="depInner">
+                                <div class="twoDepArea">
+                                    <div class="twoDepTit"><span>폴리매스<p>문제를 함께 푸는 청소년<br>수학 공동 연구프로젝트</p></span></div>
+                                                                        <ul class="twoDep">
+                                                                                    <li><a href="/contents/list/020101" class="menu">폴리매스 문제</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/020101">대한수학회</a></li>
+                                                                                                            <li><a href="/contents/list/020102">국가수리과학연구소</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/020201" class="menu">주니어폴리매스 문제</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/020201">코딩수학</a></li>
+                                                                                                            <li><a href="/contents/list/020202">오일러 프로젝트</a></li>
+                                                                                                            <li><a href="/contents/list/020203">KPP의 퍼즐라이프</a></li>
+                                                                                                            <li><a href="/contents/list/020204">게임 디자인 씽킹</a></li>
+                                                                                                            <li><a href="/contents/list/020205">KAIST 과학영재교육연구원</a></li>
+                                                                                                            <li><a href="/contents/list/020206">방승진 교수의 수학 퍼즐</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/page/polymathProject" class="menu">폴리매스 소개</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/page/polymathProject">폴리매스 프로젝트</a></li>
+                                                                                                            <li><a href="/page/juniorPolymath">주니어 폴리매스</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/020401" class="menu">멘토링&amp;인터뷰</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/020401">폴리매스 멘토링</a></li>
+                                                                                                            <li><a href="/contents/list/020402">폴리매스 인터뷰</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                                                        </ul>
+                                </div>
+                            </div>
+                            <div class="backBg"></div>
+                        </div>
+                    </li>
+                                        <li>
+                        <a href="/mathfun" class="oneDep">매스펀</a>
+                        <div class="twoDepWrap">
+                            <div class="depInner">
+                                <div class="twoDepArea">
+                                    <div class="twoDepTit"><span>매스펀<p>문제를 내고 풀고 공유하는 수학 놀이터</p></span></div>
+                                                                        <ul class="twoDep">
+                                                                                    <li><a href="/together" class="menu">함께 풀고 싶은 문제</a>
+                                                                                            </li>
+                                                                                        <li><a href="/puzzle" class="menu">퍼즐파티</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/030201">KPP 퍼즐파티</a></li>
+                                                                                                            <li><a href="/contents/list/030202">킹앤카&amp;킹앤포</a></li>
+                                                                                                            <li><a href="/contents/list/030203">퍼즐 마스터</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/030301" class="menu">자유게시판</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/030301">잡담</a></li>
+                                                                                                            <li><a href="/contents/list/030302">수학 정보</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/030400" class="menu">선물이 팡팡</a>
+                                                                                            </li>
+                                                                                                                        </ul>
+                                </div>
+                            </div>
+                            <div class="backBg"></div>
+                        </div>
+                    </li>
+                                        <li>
+                        <a href="/mathporter" class="oneDep">매스포터</a>
+                        <div class="twoDepWrap">
+                            <div class="depInner">
+                                <div class="twoDepArea">
+                                    <div class="twoDepTit"><span>매스포터<p>수학의 개념을<br>바로잡는 기자단!</p></span></div>
+                                                                        <ul class="twoDep">
+                                                                                    <li><a href="/article/list/040100" class="menu">개념 기사</a>
+                                                                                            </li>
+                                                                                        <li><a href="/article/list/040200" class="menu">자유 기사</a>
+                                                                                            </li>
+                                                                                        <li><a href="/mathporter/press" class="menu">매스포터</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/mathporter/press">기자증</a></li>
+                                                                                                            <li><a href="/mathporter/press_note">기자노트</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/mathporter/mathClub" class="menu">매스클럽</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/mathporter/mathClub">매스클럽 소개</a></li>
+                                                                                                            <li><a href="javascript:alert('준비 중입니다')">클럽 모아보기</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/040500" class="menu">수학공부 꿀팁</a>
+                                                                                            </li>
+                                                                                                                        </ul>
+                                </div>
+                            </div>
+                            <div class="backBg"></div>
+                        </div>
+                    </li>
+                                        <li>
+                        <a href="/achievement" class="oneDep">수행평가</a>
+                        <div class="twoDepWrap">
+                            <div class="depInner">
+                                <div class="twoDepArea">
+                                    <div class="twoDepTit"><span>수행평가<p>수학 수행평가 고민 끝!<br>수학 수행평가 자료실</p></span></div>
+                                                                        <ul class="twoDep">
+                                                                                    <li><a href="/contents/list/050101" class="menu">단원 별 수행평가</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/050101">수학자</a></li>
+                                                                                                            <li><a href="/contents/list/050102">수와 연산</a></li>
+                                                                                                            <li><a href="/contents/list/050103">문자와 식</a></li>
+                                                                                                            <li><a href="/contents/list/050104">함수</a></li>
+                                                                                                            <li><a href="/contents/list/050105">기하</a></li>
+                                                                                                            <li><a href="/contents/list/050106">확률통계</a></li>
+                                                                                                            <li><a href="/contents/list/050107">고등수학</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/050201" class="menu">수학체험활동</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/050201">수학동아리</a></li>
+                                                                                                            <li><a href="/contents/list/050202">수학체험실</a></li>
+                                                                                                            <li><a href="/contents/list/050203">매스투어</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/050301" class="menu">R&amp;E 및 진로가이드</a>
+                                                                                                <ul class="thrDep">
+                                                                                                            <li><a href="/contents/list/050301">R&amp;E</a></li>
+                                                                                                            <li><a href="/contents/list/050302">폴리매스 기사</a></li>
+                                                                                                            <li><a href="/contents/list/050303">진로</a></li>
+                                                                                                    </ul>
+                                                                                            </li>
+                                                                                        <li><a href="/contents/list/050400" class="menu">수학동아 활용 사례</a>
+                                                                                            </li>
+                                                                                                                        </ul>
+                                </div>
+                            </div>
+                            <div class="backBg"></div>
+                        </div>
+                    </li>
+                                    </ul>
+            </div>
+            <!-- //navi -->
+            <!-- 검색 -->
+            <div id="searchPoly">
+                <a href="#" class="searchBtn">검색</a>
+                <div class="searchWrap">
+                    <div class="dimmed"></div>
+                    <div class="scInner">
+                        <div class="scArea">
+                            <div class="scInput">
+                                <input type="text" placeholder="검색어를 입력하세요." name="keyword" maxlength="50" value="">
+                                <span class="scBtn">검색</span>
+                            </div>
+                            <div class="recommend">
+                                <div class="tit">추천 검색어</div>
+                                <ul class="recList">
+                                                                        <li><a href="/search?keyword=폴리매스">폴리매스</a></li>
+                                                                        <li><a href="/search?keyword=도형">도형</a></li>
+                                                                        <li><a href="/search?keyword=방정식">방정식</a></li>
+                                                                        <li><a href="/search?keyword=피타고라스 정리">피타고라스 정리</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //검색 -->
+            <!-- 로그인 -->
+            <div class="mLogin">
+                                <a href="https://auth.dongascience.com" class="loginBtn">로그인</a>
+                            </div>
+            <!-- 모바일 메뉴-->
+            <a href="/m_menu" class="menuBtn">메뉴</a>
+            <!-- //모바일 메뉴 -->
+        </div>
+
+</body>

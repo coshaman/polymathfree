@@ -6,6 +6,68 @@
 #skip a:active, 
 #skip a:focus {top: 0;}*/
 
+
+
+#accordian {
+	background: #333333;
+	width: 250px;
+	margin: 100px auto 0 auto;
+	color: white;
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* 메뉴 스타일 */
+#accordian h3 {
+	font-size: 12px;
+	line-height: 34px;
+	padding: 0 10px;
+	cursor: pointer;
+	background: #064461;
+	background: linear-gradient(#003040, #002535);
+}
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+/* 아이콘폰트 스타일 */
+#accordian h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+#accordian li {
+	list-style-type: none;
+}
+
+/* 서브메뉴 스타일 */
+#accordian ul ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 27px;
+	display: block;
+	padding: 0 15px;
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	-o-transition: all 0.15s;
+	-ms-transition: all 0.15s;
+	transition: all 0.15s;
+}
+#accordian ul ul li a:hover {
+	background: #003545;
+	border-left: 5px solid #09c;
+}
+
+/* active 클래스 외에 것은 보이지 않게 하기 */
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+
+
 .text-rainbow {
   background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
   -webkit-background-clip: text;
