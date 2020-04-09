@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수학연합 홈페이지</title>
+    <link rel="shortcut icon" href="http://img.dongascience.com/polymath/favicon.ico">
+    <!--<link href=".ico" rel="shortcut icon" type="image/x-icon">-->
+    <!--<script type="text/javascript">
+        var audio = new Audio();
+        audio.src = "music_1.mp3";
+    </script>
+    
+<!--audio autoplay controls> <source src="%E3%80%90M-V%E3%80%91+%EC%9E%A0%EB%9C%B0+-+%EB%B0%A4%EC%9D%84+%EB%B3%B4%EB%8A%94+%EB%88%88+%F0%9F%91%BB%F0%9F%8C%99+Official+Music+Video%20(128%20%20kbps).mp3" type="audio/mp3"> </audio>-->
+   
+   
+   
+   
+    <style>
+        *{margin:0;padding:0;}
+  ul,li{list-style:none;}
+  #slide{height:420px;position:relative;overflow:hidden;}
+  #slide ul{width:400%;height:100%;transition:1s;}
+  #slide ul:after{content:"";display:block;clear:both;}
+  #slide li{float:left;width:25%;height:100%;}
+  #slide li:nth-child(1){background:#680;}
+  #slide li:nth-child(2){background:#ffa;}
+  #slide li:nth-child(3){background:skyblue;}
+  #slide li:nth-child(4){background:#aaf;}
+  #slide input{display:none;}
+  #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+  #slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+  #pos1:checked~ul{margin-left:0%;}
+  #pos2:checked~ul{margin-left:-100%;}
+  #pos3:checked~ul{margin-left:-200%;}
+  #pos4:checked~ul{margin-left:-300%;}
+  #pos1:checked~.pos>label:nth-child(1){background:#666;}
+  #pos2:checked~.pos>label:nth-child(2){background:#666;}
+  #pos3:checked~.pos>label:nth-child(3){background:#666;}
+  #pos4:checked~.pos>label:nth-child(4){background:#666;}
+        
+        
+        
+        
+        
+        
+    </style>
+    <style type="text/css">
+        yy:hover { animation: rainbow 5s infinite linear; }
+        @keyframes rainbow {
+    0%   {color: red; }
+    10%   {color: orange; }
+    23%  {color: yellow; }
+    36%  {color: yellowgreen; }
+    49%  {color: green; }
+    62%   {color: blue; }
+    74%  {color: indigo; }
+    86%   {color: purple; }
+    100% {color: red; }
+}
+        
+        
+        table{
+            height: 100px;
+            margin: auto;
+            text-align: center;
+        }
+    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style type="text/css">
+        body {font-size:11pt; padding:0; margin:0; text-align: center;}
+	h3 {color: #85144b; font-size: 14pt; margin:10 auto; padding: 10px;}
+	.contents {width: 800px; height: 400px; background-color: #d6d6d6; margin: 0 auto;}
+	
+	/* banner */
+	.banner {position: relative; width: 340px; height: 110px; top: 50px;  margin:0 auto; padding:0; overflow: hidden;}
+	.banner ul {position: absolute; margin: 0px; padding:0; list-style: none; }
+	.banner ul li {float: left; width: 340px; height: 210px; margin:0; padding:0;}
+
+//-->
+</style>
+    <script language="JavaScript">
+        function controlExpand() {
+            var sup = event.srcElement.id;
+            if (sup != '') {
+                var sub = document.all[(sup + "Sub")]
+                if(sub != null) {
+                    if (sub.style.display =='none')
+                        sub.style.display = '';
+                    else
+                        sub.style.display = 'none';
+                }
+            }
+        }
+        
+        
+        
+        </script>
+    <style>
+        #center {width="500"; margin: 0 auto;}
+        
+        ul{
+           list-style:none;
+        }
+        * {margin: 0; padding: 0;}
+        #skip {background : skyblue; height: 150px; font-size : 20px; color: skyblue; text-align: center; color: white}
+        #wrap {text-align: center; font-size: 30px; color: #fff;}
+        #header {height: 240px; line-height: 20px; background: skyblue;}
+        #banner {height: 500px; line-height: 50px; background-image: url('abstract-1510192_1920.png');}
+        #contents {height: 8w00px; line-height: 50px; background: #81BEF7;} 
+        #footer {height: 100px; line-height: 100px; background: #d6ebfd;}
+        .container {width: 1100px; height: inherit; margin: 0 auto; background: rgba(0,0,0,0.1);}
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+</head>
+<body link ="white" vlink ="white" alink = "white">
+    
+    <!-- 스킵 내비게이션 -->
+    <!--<div id="skip">
+        <p style="text-align:center;">
+        <a rel="bookmark" href="#banner" background-color= "#d6ebfd" style="text-decoration:none">배너 영역 바로가기</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a rel="bookmark" href="#contents" style="text-decoration:none">컨텐츠 영역 바로가기</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a rel="bookmark" href="#footer" style="text-decoration:none">하단 영역 바로가기</a></p>
+    </div>-->
+    <!-- //스킵 내비게이션 -->
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+               <br>
+                <img src="plogo.png" height="60" width="180">
+                <br><br><br>
+                <h1><a href="index.html" style="text-decoration:none"><strong>폴리매스 홈페이지</strong></a></h1>
+            </div>
+        </div>
+        
+        <div class="discord-widget"></div>
+        <div id="skip">
+        <table width="450px" height="145px">
+          <td>
+           <div onClick="controlExpand()" style="cursor:hand">
+            <div id="Free">게시판</div>
+            <div id="FreeSub" style="display:none">
+                <!--<ul>
+                <li><br></li>
+                <li><a href="index2.html" style="text-decoration:none">잡담 게시판</a></li>
+                <li><a href="index2.html" style="text-decoration:none">공지사항</a></li>
+                </ul>-->
+                준비 중입니다!
+            </div>
+        </div>
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>
+           <div onClick="controlExpand()" style="cursor:hand">
+            <div id="Book">연재물</div>
+            <div id="BookSub" style="display:none">
+                <ul>
+                <li><br></li>
+                <li><a href="index2.html" style="text-decoration:none">정기 연재 소설</a></li>
+                <li><a href="index2.html" style="text-decoration:none">매스툰</a></li>
+                </ul>
+            </div>
+            </div>
+        </td>
+       </table>
+        
+       
+        
+        <div id="banner">
+            <div class="container">
+                   <div onClick="controlExpand()" style="cursor:hand">
+            <div id="pere">'집돌이 페렐만' 님의 소설</div>
+            <div id="pereSub" style="display:none">
+                <ul>
+                <li><a href="lists/1.html">초인론 1부 1장~2장</a></li>
+                <!--<li><a href="index2.html" style="text-decoration:none"></a></li>-->
+                </ul>
+            </div>
+                      </div>
+                      <div onClick="controlExpand()" style="cursor:hand">
+            <div id="sam">'삼각파이'님의 소설 : 꿈의 세계는 없다</div>
+            <div id="samSub" style="display:none">
+                <ul>
+                <li><a href="lists/2-1.html">프롤로그</a></li>
+                <li><a href="lists/2-2.html">1화</a></li>
+                <!--<li><a href="index2.html" style="text-decoration:none"></a></li>-->
+                </ul>
+            </div>
+                      </div>
+            </div>
+        </div>
+            
+        </div>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+<!--Start of Tawk.to Script
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d62640477aa790be3309e63/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+End of Tawk.to Script-->
+
+
+
+
+<div style="position: fixed; bottom: 10px; right: 5px;">
+    <a href="#header" style="color:black; text-decoration: none">맨 위로</a>
+</body>
+</html>
+
+
