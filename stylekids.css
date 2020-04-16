@@ -4,11 +4,6 @@ h1 {
     font-size: 90px;
 }
 
-
-h1 span:nth-child(1) {
-    color : rgb(64, 129, 237, 1);
-}
-
 h1 span:nth-child(2) {
     color : rgb(228, 65, 52, 1);
 }
@@ -45,7 +40,9 @@ height:40px;
 border: 0;
 }
 
-
+li bu {
+    float: left;
+}
 
 ul {
     list-style-type: none;

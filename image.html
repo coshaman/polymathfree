@@ -2,18 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Poogle</title>
+    <title>Pimage</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleimage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        a:link    { text-decoration:none }
+        a:visited { text-decoration:none }
+        a:hover   { text-decoration:none }
+        a:active  { text-decoration:none }
+    
+    </style>
 </head>
 <body>
    <ul>
-      <li><a class="active" href="index.html">Google</a></li>
+      <li><a href="index.html">Google</a></li>
       <li><a href="daum.html">Daum</a></li>
       <li><a href="naver.html">naver</a></li>
       <li><a href="youtube.html">Youtube</a></li>
-      <li><a href="image.html">Image</a></li>
+      <li><a class="active" href="image.html">Image</a></li>
       <li><a href="wiki.html">wiki</a></li>
       <li><a href="polymath.html">Polymath</a></li>
       <li><a href="http://kids.dongascience.com/" style="text-decoration:none">어린이과학동아</a></li>
@@ -21,10 +28,11 @@
       <li><a href="info.html" style="text-decoration:none">info</a></li>
     </ul>
    
-    <h1><span>P</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
-    <form action="https://www.google.com/search?q=" method="get">
+    <h1><span>P</span><span>i</span><span>m</span><span>a</span><span>g</span><span>e</span></h1>
+    <h2><span style="color: darkcyan">저작권 무료 이미지 제공</span></h2>
+    <form action="https://pixabay.com/ko/images/search/" method="get">
         <div class="mx-auto search-bar input-group mb-3 rounded-pill">
-            <input name="q" type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="검색어를 입력하세요" aria-describedby="button-addon2">
+            <input name="q" type="text" class="form-control" placeholder="이미지 키워드 검색" aria-label="이미지 키워드를 입력하세요" aria-describedby="button-addon2">
             <div class="input-group-append">
                 <!--<button type="button" id="" class="btn btnEvent"><img src="search.png" alt="btnImages" class="btnImages" width="30px" height="30px">
                 </button>-->

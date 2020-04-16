@@ -4,6 +4,10 @@ h1 {
     font-size: 90px;
 }
 
+h2 {
+    text-align:center
+}
+
 
 h1 span:nth-child(1) {
     color : rgb(64, 129, 237, 1);
